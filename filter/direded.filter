@@ -1,4 +1,4 @@
-# version 3
+# version 4
 
 # ------------------
 # Unique
@@ -123,7 +123,7 @@ Show
 # Currency Tier A: Gemcutter, Annullment
 Show
 	Class "Currency"
-	BaseType "Gemcutter's Prism" "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb"
+	BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb"
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35
@@ -145,7 +145,7 @@ Show
 # Currency Tier B: Vaal, Chaos, Exalt, Exotic
 Show
 	Class "Currency"
-	BaseType "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Exalted Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy" 
+	BaseType "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Exalted Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy" "Gemcutter's Prism"
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -347,7 +347,7 @@ Show
 
 
 Hide
-	Class "Trial Coins" "Inscribed Ultimatum"
+	BaseType "Barya" "Ultimatum"
 
 #--------------------------
 # Value Rares
@@ -402,9 +402,22 @@ Hide
 # -----------
 
 Show
+	Class "Bows"
+	Rarity <= Magic
+	BaseType "Dualstring" "Zealot"
+	ItemLevel >= 82
+	SetBorderColor 255 255 255 255
+	SetFontSize 40
+
+Show
+	BaseType "Dualstring" "Zealot"
+	SetBorderColor 255 255 255 255
+	SetFontSize 40
+
+Show
 	Rarity Rare
 	BaseType "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Firm Bracers" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Expert Chain Tiara" "Expert Wicker Tiara" "Expert Feathered Tiara" "Advanced Dualstring Bow" "Expert Bombard Crossbow" "Expert Sturdy Crossbow" "Expert Tense Crossbow" "Expert Forlorn Crossbow" "Expert Varnished Crossbow" "Expert Dualstring Bow" "Expert Composite Bow" "Expert Warden Bow" "Expert Zealot Bow" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crackling Quarterstaff" "Expert Forge Maul" "Expert Temple Maul" "Expert Leaden Greathammer" "Expert Crumbling Maul" "Expert Brigand Mace" "Expert Plated Mace" "Expert Slim Mace" "Expert Construct Hammer" "Attuned Wand" "Siphoning Wand" "Expert Intricate Gloves" "Hexer's Robe" "Expert Spined Bracers" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Scalper's Jacket" "Expert Sacrificial Mantle" "Expert Altar Robe" "Expert Serpentscale Coat" "Expert Vaal Cuirass" "Expert Hunter Hood" "Expert Feathered Tiara" "Talon Claw" "Edged Claw" "Cinquedea" "Dark Blade" "Dread Hatchet" "Torment Club" "Helix Spear" "Dualstring Bow" "Ultra Greatsword" "Vile Greataxe" "Expert Leaden Greathammer" "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Crackling Quarterstaff" "Expert Dyad Crossbow" "Expert Bombard Crossbow" "Expert Tense Crossbow" "Primed Quiver" "Expert Omen Crest Shield" "Expert Edged Buckler" "Expert Stone Tower Shield" "Expert Scalper's Jacket" "Expert Wayfarer Jacket" "Expert Sacrificial Mantle" "Expert Shaman Mantle" "Expert Altar Robe" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Serpentscale Coat" "Expert Studded Vest"
-	SetFontSize 25 
+	SetFontSize 30
 
 Show
 	Rarity Rare
