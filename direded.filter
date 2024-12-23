@@ -1,6 +1,7 @@
 # ------------------
 # Unique
 # ------------------
+
 Show
 	Rarity Unique
 	BaseType "Heavy Belt"
@@ -32,7 +33,7 @@ Hide
 Show
 	Class "Currency"
 	BaseType "Distilled Fear" "Distilled Suffering" "Distilled Isolation" "Greater Essence of Haste" "Greater Essence of Haste" "Greater Essence of Ruin" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of Ice" "Greater Essence of Ruin" "Greater Essence of Sorcery"
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 255 0 0 255
 	SetBorderColor 255 0 0 255
 	SetBackgroundColor 255 255 255 255
@@ -43,19 +44,18 @@ Show
 Show
 	Class "Currency"
 	BaseType "Distilled Despair" "Distilled Disgust" "Distilled Isolation" "Greater Essence"
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 240 90 35
 	PlayAlertSound 1 300
 	PlayEffect White
 	MinimapIcon 1 White Circle
-	SetFontSize 40
 
 Show
 	Class "Currency"
 	BaseType "Distilled" "Essence of"
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -66,7 +66,7 @@ Show
 Show
 	Class "Currency"
 	BaseType "Neural Catalyst" "Tul's Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Chayula's Catalyst" "Reaver Catalyst"
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -77,7 +77,7 @@ Show
 Hide
 	Class "Currency"
 	BaseType "Catalyst"
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -138,12 +138,12 @@ Show
 	PlayAlertSound 2 300
 	PlayEffect White
 	MinimapIcon 1 White Circle
-	SetFontSize 40
+	SetFontSize 35
 
 Show
 	Class "Currency"
 	BaseType "Distilled" "Essence of"
-	SetFontSize 45
+	SetFontSize 35
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -157,14 +157,14 @@ Show
 	BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Artificer's Orb"
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
-	SetFontSize 40
+	SetFontSize 35
 	MinimapIcon 2 Grey Circle
 
 Show
 	Class "Currency"
 	BaseType "Simulacrum Splinter" " Artifact"
 	StackSize >= 1
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 180 15 200
@@ -174,7 +174,7 @@ Show
 	Class "Currency"
 	BaseType "Breach Splinter"
 	StackSize > 0
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 180 15 200
@@ -183,7 +183,7 @@ Show
 Show
 	Class "Currency"
 	BaseType " Artifact"
-	SetFontSize 40
+	SetFontSize 35
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 180 15 200
@@ -389,14 +389,16 @@ Show
 	SetFontSize 30 
 
 Show
-	Rarity = Rare
+	Rarity Rare
 	Class "Rings" "Belt" "Amulet"
 	AreaLevel >= 65
 	SetFontSize 35
 
 Hide
 	Rarity <= Magic
-	Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Rings" "Belt" "Amulet"
 	AreaLevel >= 65
 
-
+Hide
+	Rarity <= Magic
+	Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Rings" "Belt" "Amulet"
+	AreaLevel >= 65
