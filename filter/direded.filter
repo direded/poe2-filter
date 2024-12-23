@@ -414,6 +414,12 @@ Show
 
 Show
 	Rarity Rare
+	Class "Sceptres"
+	SetBorderColor 255 0 255 255
+	SetFontSize 27
+
+Show
+	Rarity Rare
 	Class "Rings" "Belt" "Amulet"
 	AreaLevel >= 65
 	SetFontSize 35
