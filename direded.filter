@@ -206,8 +206,10 @@ Hide
 Show
 	StackSize >= 500
 	BaseType == "Gold"
+	SetFontSize 10
 	SetTextColor 255 255 255
 	SetBorderColor 255 255 255
+	SetBackgroundColor 0 0 0 0
 	PlayEffect Orange Temp
 
 Hide
@@ -261,7 +263,6 @@ Show
 # Special A Tier - Rare Jewels
 Show
 	Class "Jewel"
-	BaseType "Ruby" "Sapphire" "Emerald"
 	Rarity Rare
 	SetTextColor 0 240 190
 	SetBorderColor 0 240 190
@@ -276,7 +277,7 @@ Show
 	Rarity Magic
 	SetTextColor 0 240 190
 	SetBorderColor 0 240 190
-	SetFontSize 40
+	SetFontSize 37
 	PlayEffect Cyan Temp
 
 # Special B Tier - Any Runes and Charms
@@ -297,7 +298,7 @@ Show
 	PlayAlertSound 2 300
 	PlayEffect White
 	MinimapIcon 1 White Square
-	SetFontSize 40
+	SetFontSize 35
 
 Show
 	BaseType "Waystone" 
@@ -308,7 +309,7 @@ Show
 	PlayAlertSound 4 300
 	PlayEffect White
 	MinimapIcon 1 White Square
-	SetFontSize 40
+	SetFontSize 35
 
 Hide
 	BaseType "Waystone"
@@ -321,7 +322,7 @@ Show
 	PlayAlertSound 4 300
 	PlayEffect White
 	MinimapIcon 1 White Square
-	SetFontSize 40
+	SetFontSize 35
 
 
 #--------------------------
@@ -345,7 +346,6 @@ Show
 	Rarity Normal
 	BaseType "Amethyst Ring" "Heavy Belt"
 	SetFontSize 35
-
 
 #--------------------------
 # Salvagable Items
