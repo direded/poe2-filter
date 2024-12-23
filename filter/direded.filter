@@ -1,4 +1,4 @@
-# version 4
+# version 5
 
 # ------------------
 # Unique
@@ -145,7 +145,7 @@ Show
 # Currency Tier B: Vaal, Chaos, Exalt, Exotic
 Show
 	Class "Currency"
-	BaseType "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Exalted Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy" "Gemcutter's Prism"
+	BaseType "Vaal Orb" "Chaos Orb" "Exotic" "Exalted Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy" "Gemcutter's Prism" "Artificer's Orb" "Armourer's Scrap"
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
@@ -168,17 +168,17 @@ Show
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
 	Class "Currency"
-	BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Artificer's Orb"
+	BaseType "Arcanist's Etcher" "Blacksmith's Whetstone"
 	SetTextColor 255 207 132
 	SetBorderColor 255 207 132
-	SetFontSize 35
+	SetFontSize 33
 	MinimapIcon 2 Grey Circle
 
 Show
 	Class "Currency"
 	BaseType "Simulacrum Splinter" " Artifact"
 	StackSize >= 1
-	SetFontSize 35
+	SetFontSize 33
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 180 15 200
@@ -188,7 +188,7 @@ Show
 	Class "Currency"
 	BaseType "Breach Splinter"
 	StackSize > 0
-	SetFontSize 35
+	SetFontSize 33
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 180 15 200
@@ -197,7 +197,7 @@ Show
 Show
 	Class "Currency"
 	BaseType " Artifact"
-	SetFontSize 35
+	SetFontSize 33
 	SetTextColor 255 255 255 255
 	SetBorderColor 255 255 255 255
 	SetBackgroundColor 180 15 200
@@ -205,7 +205,7 @@ Show
 
 Hide
 	Class "Currency"
-	BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation"
+	BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation" "Lesser Jeweller's Orb"
 
 Hide
 	BaseType == "Gold"
