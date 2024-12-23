@@ -1,5 +1,9 @@
+# ------------------
+# Unique
+# ------------------
 Show
 	Rarity Unique
+	BaseType "Chain Mail" "Heavy Belt" "Utility Belt" "Ultimate Life Flask" "Crucible Tower Shield" "Silk Robe" "Vase Relic" "Time-Lost Diamond" "Diamond"
 	SetTextColor 175 96 37 255
 	SetBorderColor 175 96 37 255
 	SetBackgroundColor 53 13 13 255
@@ -8,6 +12,12 @@ Show
 	MinimapIcon 2 Brown Star
 	SetFontSize 40
 
+Hide
+	Rarity Unique
+
+# ------------------
+# Currency
+# ------------------
 Show
 	Class "Currency"
 	BaseType "Distilled Fear" "Distilled Suffering" "Distilled Isolation" "Greater Essence of Haste" "Greater Essence of Haste" "Greater Essence of Ruin" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of Ice" "Greater Essence of Ruin" "Greater Essence of Sorcery"
@@ -429,3 +439,5 @@ Hide
 	Rarity <= Magic
 	Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Rings" "Belt" "Amulet"
 	AreaLevel >= 65
+
+
