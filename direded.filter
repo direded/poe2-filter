@@ -261,33 +261,11 @@ Show
 # Special A Tier - Rare Jewels
 Show
 	Class "Jewel"
-	BaseType "Emerald"
-	Rarity Rare
-	SetTextColor 0 240 190
-	SetBorderColor 0 240 190
-	SetBackgroundColor 55 145 75
-	SetFontSize 40
-	MinimapIcon 2 Cyan Triangle
-	PlayEffect Cyan
-
-Show
-	Class "Jewel"
-	BaseType "Ruby"
+	BaseType "Ruby" "Sapphire" "Emerald"
 	Rarity Rare
 	SetTextColor 0 240 190
 	SetBorderColor 0 240 190
 	SetBackgroundColor 190 30 15
-	SetFontSize 40
-	MinimapIcon 2 Cyan Triangle
-	PlayEffect Cyan
-
-Show
-	Class "Jewel"
-	BaseType "Sapphire"
-	Rarity Rare
-	SetTextColor 0 240 190
-	SetBorderColor 0 240 190
-	SetBackgroundColor 70 70 195
 	SetFontSize 40
 	MinimapIcon 2 Cyan Triangle
 	PlayEffect Cyan
