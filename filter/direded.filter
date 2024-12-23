@@ -208,14 +208,6 @@ Hide
 	BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation"
 
 Hide
-	StackSize >= 500
-	BaseType == "Gold"
-	SetFontSize 10
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255
-	SetBackgroundColor 0 0 0 0
-
-Hide
 	BaseType == "Gold"
 	SetTextColor 180 180 180
 	SetBorderColor 0 0 0 255
@@ -411,6 +403,7 @@ Show
 
 Show
 	BaseType "Dualstring" "Zealot"
+	Rarity Rare
 	SetBorderColor 255 255 255 255
 	SetFontSize 40
 
