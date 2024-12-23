@@ -24,6 +24,18 @@ Show
 	MinimapIcon 1 Brown Star
 	SetFontSize 40
 
+
+Show
+	Rarity Unique
+	Class "Rings" "Amulets"
+	SetTextColor 175 96 37 255
+	SetBorderColor 175 96 37 255
+	SetBackgroundColor 53 13 13 255
+	PlayAlertSound 3 300
+	PlayEffect Brown
+	MinimapIcon 1 Brown Star
+	SetFontSize 40
+
 Hide
 	Rarity Unique
 
@@ -193,6 +205,20 @@ Hide
 	Class "Currency"
 	BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation"
 
+Hide
+	StackSize >= 500
+	BaseType == "Gold"
+	SetFontSize 10
+	SetTextColor 255 255 255
+	SetBorderColor 255 255 255
+	SetBackgroundColor 0 0 0 0
+
+Hide
+	BaseType == "Gold"
+	SetTextColor 180 180 180
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 0 0 0 180
+
 # Unknown currency
 Show
 	Class "Currency"
@@ -210,24 +236,6 @@ Hide
 	BaseType "rune"
 	AreaLevel >= 65
 
-#--------------------------
-# Gold
-#--------------------------
-
-Show
-	StackSize >= 500
-	BaseType == "Gold"
-	SetFontSize 10
-	SetTextColor 255 255 255
-	SetBorderColor 255 255 255
-	SetBackgroundColor 0 0 0 0
-	PlayEffect Orange Temp
-
-Hide
-	BaseType == "Gold"
-	SetTextColor 180 180 180
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 0 0 0 180
 
 #--------------------------
 # Uncut Gems
@@ -391,7 +399,7 @@ Hide
 Show
 	Rarity Rare
 	BaseType "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Firm Bracers" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Expert Chain Tiara" "Expert Wicker Tiara" "Expert Feathered Tiara" "Advanced Dualstring Bow" "Expert Bombard Crossbow" "Expert Sturdy Crossbow" "Expert Tense Crossbow" "Expert Forlorn Crossbow" "Expert Varnished Crossbow" "Expert Dualstring Bow" "Expert Composite Bow" "Expert Warden Bow" "Expert Zealot Bow" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crackling Quarterstaff" "Expert Forge Maul" "Expert Temple Maul" "Expert Leaden Greathammer" "Expert Crumbling Maul" "Expert Brigand Mace" "Expert Plated Mace" "Expert Slim Mace" "Expert Construct Hammer" "Attuned Wand" "Siphoning Wand" "Expert Intricate Gloves" "Hexer's Robe" "Expert Spined Bracers" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Scalper's Jacket" "Expert Sacrificial Mantle" "Expert Altar Robe" "Expert Serpentscale Coat" "Expert Vaal Cuirass" "Expert Hunter Hood" "Expert Feathered Tiara" "Talon Claw" "Edged Claw" "Cinquedea" "Dark Blade" "Dread Hatchet" "Torment Club" "Helix Spear" "Dualstring Bow" "Ultra Greatsword" "Vile Greataxe" "Expert Leaden Greathammer" "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Crackling Quarterstaff" "Expert Dyad Crossbow" "Expert Bombard Crossbow" "Expert Tense Crossbow" "Primed Quiver" "Expert Omen Crest Shield" "Expert Edged Buckler" "Expert Stone Tower Shield" "Expert Scalper's Jacket" "Expert Wayfarer Jacket" "Expert Sacrificial Mantle" "Expert Shaman Mantle" "Expert Altar Robe" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Serpentscale Coat" "Expert Studded Vest"
-	SetFontSize 30 
+	SetFontSize 25 
 
 Show
 	Rarity Rare
