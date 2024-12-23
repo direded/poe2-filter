@@ -8,18 +8,6 @@ Show
 	MinimapIcon 2 Brown Star
 	SetFontSize 40
 
-## Divine Orb Style
-Show
-	Class "Currency"
-	BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"  "Greater Jeweller's Orb"
-	SetFontSize 45
-	SetTextColor 255 0 0 255
-	SetBorderColor 255 0 0 255
-	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 6 300
-	PlayEffect Red
-	MinimapIcon 0 Red Star
-
 Show
 	Class "Currency"
 	BaseType "Distilled Fear" "Distilled Suffering" "Distilled Isolation" "Greater Essence of Haste" "Greater Essence of Haste" "Greater Essence of Ruin" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of Ice" "Greater Essence of Ruin" "Greater Essence of Sorcery"
@@ -54,7 +42,6 @@ Show
 	PlayEffect White
 	MinimapIcon 1 White Circle
 
-
 Show
 	Class "Currency"
 	BaseType "Neural Catalyst" "Tul's Catalyst" "Xoph's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Chayula's Catalyst" "Reaver Catalyst"
@@ -74,6 +61,133 @@ Hide
 	SetBorderColor 255 207 132
 	SetBackgroundColor 76 51 12
 
+# Currency Tier S
+Show
+	Class "Currency"
+	BaseType "Mirror"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+	CustomAlertSoundOptional "direded_filter/zombie_svo.mp3" 300
+
+Show
+	Class "Currency"
+	BaseType "Divine" "Perfect Jeweller's Orb"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+# Currency Tier A: Gemcutter, Annullment
+Show
+	Class "Currency"
+	BaseType "Gemcutter's Prism" "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35
+	PlayAlertSound 1 300
+	PlayEffect White
+	MinimapIcon 1 White Circle
+	SetFontSize 40
+
+Show
+	Class "Omen"
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 240 90 35
+	PlayAlertSound 1 300
+	PlayEffect White
+	MinimapIcon 1 White Circle
+	SetFontSize 40
+
+# Currency Tier B: Vaal, Chaos, Exalt, Exotic
+Show
+	Class "Currency"
+	BaseType "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Exalted Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy" 
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 White Circle
+	SetFontSize 40
+
+Show
+	Class "Currency"
+	BaseType "Distilled" "Essence of"
+	SetFontSize 45
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 White Circle
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+	Class "Currency"
+	BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Artificer's Orb"
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+	SetFontSize 40
+	MinimapIcon 2 Grey Circle
+
+Show
+	Class "Currency"
+	BaseType "Simulacrum Splinter" " Artifact"
+	StackSize >= 1
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 180 15 200
+	MinimapIcon 2 Grey Circle
+
+Show
+	Class "Currency"
+	BaseType "Breach Splinter"
+	StackSize > 0
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 180 15 200
+	MinimapIcon 2 Grey Circle
+
+Show
+	Class "Currency"
+	BaseType " Artifact"
+	SetFontSize 40
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 180 15 200
+	MinimapIcon 2 Grey Circle
+
+Hide
+	Class "Currency"
+	BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation"
+
+# Unknown currency
+Show
+	Class "Currency"
+	SetTextColor 255 207 132
+	SetBorderColor 255 207 132
+	SetBackgroundColor 76 51 12
+	PlayAlertSound 2 300
+	PlayEffect Pink
+	MinimapIcon 1 White Circle
+
+
+Hide
+	Rarity <= Magic
+	Class "Currency"
+	BaseType "rune"
+	AreaLevel >= 65
 
 #--------------------------
 # Gold
@@ -186,104 +300,6 @@ Hide
 #--------------------------
 # Socketables and Special Character Equipment
 #--------------------------
-
-# Currency Tier A: Gemcutter, Annullment
-Show
-	Class "Currency"
-	BaseType "Gemcutter's Prism" "Orb of Annulment" "Orb of Chance"
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35
-	PlayAlertSound 1 300
-	PlayEffect White
-	MinimapIcon 1 White Circle
-	SetFontSize 40
-
-Show
-	Class "Omen"
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 240 90 35
-	PlayAlertSound 1 300
-	PlayEffect White
-	MinimapIcon 1 White Circle
-	SetFontSize 40
-
-# Currency Tier B: Vaal, Chaos, Exalt, Exotic
-Show
-	Class "Currency"
-	BaseType "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Exotic" "Exalted Orb" "Regal Orb" "Glassblower's Bauble" "Orb of Alchemy" 
-	SetTextColor 255 207 132
-	SetBorderColor 255 207 132
-	SetBackgroundColor 76 51 12
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 1 White Circle
-	SetFontSize 40
-
-Show
-	Class "Currency"
-	BaseType "Distilled" "Essence of"
-	SetFontSize 45
-	SetTextColor 255 207 132
-	SetBorderColor 255 207 132
-	SetBackgroundColor 76 51 12
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 1 White Circle
-
-# Currency Tier C: Vaal, Chaos, Exalt, Exotic
-Show
-	Class "Currency"
-	BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Artificer's Orb"
-	SetTextColor 255 207 132
-	SetBorderColor 255 207 132
-	SetFontSize 40
-	MinimapIcon 2 Grey Circle
-
-Show
-	Class "Currency"
-	BaseType "Simulacrum Splinter" " Artifact"
-	StackSize >= 1
-	SetFontSize 40
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 180 15 200
-	MinimapIcon 2 Grey Circle
-
-Show
-	Class "Currency"
-	BaseType "Breach Splinter"
-	StackSize > 0
-	SetFontSize 40
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 180 15 200
-	MinimapIcon 2 Grey Circle
-
-Show
-	Class "Currency"
-	BaseType " Artifact"
-	SetFontSize 40
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 180 15 200
-	MinimapIcon 2 Grey Circle
-
-Hide
-	Class "Currency"
-	BaseType "Wisdom" "Shard" "Aug" "Orb of Transmutation"
-
-# Unknown currency
-Show
-	Class "Currency"
-	SetTextColor 255 207 132
-	SetBorderColor 255 207 132
-	SetBackgroundColor 76 51 12
-	PlayAlertSound 2 300
-	PlayEffect Pink
-	MinimapIcon 1 White Circle
-
 # Fragments
 Show
 	BaseType "Simulacrum" " Tablet" "Breachstone" "Barya" "Ultimatum" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate"
@@ -413,12 +429,3 @@ Hide
 	Rarity <= Magic
 	Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Rings" "Belt" "Amulet"
 	AreaLevel >= 65
-
-
-Hide
-	Rarity <= Magic
-	Class "Currency"
-	BaseType "rune"
-	AreaLevel >= 65
-
-
