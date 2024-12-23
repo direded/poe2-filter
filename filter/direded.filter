@@ -50,10 +50,10 @@ Show
 	SetTextColor 255 207 255
 	SetBorderColor 255 207 255
 	SetBackgroundColor 65 20 80
-	PlayAlertSound 2 300
+	PlayAlertSound 6 300
 	PlayEffect White
 	MinimapIcon 1 White Square
-	SetFontSize 35
+	SetFontSize 45
 
 Show
 	BaseType "Simulacrum" " Tablet" "Breachstone" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate"
