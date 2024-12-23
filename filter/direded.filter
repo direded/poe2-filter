@@ -44,6 +44,27 @@ Hide
 # ------------------
 # Currency
 # ------------------
+# Fragments
+Show
+	Class "Pinnacle Keys"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 White Square
+	SetFontSize 35
+
+Show
+	BaseType "Simulacrum" " Tablet" "Breachstone" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 White Square
+	SetFontSize 35
+
 Show
 	Class "Currency"
 	BaseType "Distilled Fear" "Distilled Suffering" "Distilled Isolation" "Greater Essence of Haste" "Greater Essence of Haste" "Greater Essence of Ruin" "Greater Essence of Torment" "Greater Essence of Electricity" "Greater Essence of Ice" "Greater Essence of Ruin" "Greater Essence of Sorcery"
@@ -223,7 +244,6 @@ Show
 	PlayEffect Pink
 	MinimapIcon 1 White Circle
 
-
 Hide
 	Rarity <= Magic
 	Class "Currency"
@@ -302,16 +322,6 @@ Hide
 #--------------------------
 # Socketables and Special Character Equipment
 #--------------------------
-# Fragments
-Show
-	BaseType "Simulacrum" " Tablet" "Breachstone" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate"
-	SetTextColor 255 207 255
-	SetBorderColor 255 207 255
-	SetBackgroundColor 65 20 80
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 1 White Square
-	SetFontSize 35
 
 Show
 	BaseType "Waystone" 
