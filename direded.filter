@@ -3,13 +3,24 @@
 # ------------------
 Show
 	Rarity Unique
-	BaseType "Chain Mail" "Heavy Belt" "Utility Belt" "Ultimate Life Flask" "Crucible Tower Shield" "Silk Robe" "Vase Relic" "Time-Lost Diamond" "Diamond" "Spiked Club" "Smuggler Coat" "Armoured Cap" "Fine Bracers" "Burnished Gauntlets" "Furtive Wraps" "Stone Tower Shield" "Omen Crest Shield" "Grand Regalia"
+	BaseType "Heavy Belt"
+	SetTextColor 175 96 37 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 53 13 13 255
+	PlayAlertSound 5 300
+	PlayEffect Brown
+	MinimapIcon 2 Brown Star
+	SetFontSize 45
+
+Show
+	Rarity Unique
+	BaseType "Utility Belt" "Ultimate Life Flask" "Crucible Tower Shield" "Silk Robe" "Vase Relic" "Time-Lost Diamond" "Diamond" "Spiked Club" "Smuggler Coat" "Armoured Cap" "Fine Bracers" "Burnished Gauntlets" "Furtive Wraps" "Stone Tower Shield" "Omen Crest Shield" "Grand Regalia"
 	SetTextColor 175 96 37 255
 	SetBorderColor 175 96 37 255
 	SetBackgroundColor 53 13 13 255
 	PlayAlertSound 3 300
 	PlayEffect Brown
-	MinimapIcon 2 Brown Star
+	MinimapIcon 1 Brown Star
 	SetFontSize 40
 
 Hide
