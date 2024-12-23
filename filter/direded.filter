@@ -346,6 +346,9 @@ Show
 	SetFontSize 35
 
 
+Hide
+	Class "Trial Coins" "Inscribed Ultimatum"
+
 #--------------------------
 # Value Rares
 #--------------------------
