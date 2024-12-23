@@ -383,6 +383,11 @@ Hide
 ### OPTIONAL RULE: Hide random bases
 # REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
 
+
+# -----------
+# Rares
+# -----------
+
 Show
 	Rarity Rare
 	BaseType "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Firm Bracers" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Expert Chain Tiara" "Expert Wicker Tiara" "Expert Feathered Tiara" "Advanced Dualstring Bow" "Expert Bombard Crossbow" "Expert Sturdy Crossbow" "Expert Tense Crossbow" "Expert Forlorn Crossbow" "Expert Varnished Crossbow" "Expert Dualstring Bow" "Expert Composite Bow" "Expert Warden Bow" "Expert Zealot Bow" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crackling Quarterstaff" "Expert Forge Maul" "Expert Temple Maul" "Expert Leaden Greathammer" "Expert Crumbling Maul" "Expert Brigand Mace" "Expert Plated Mace" "Expert Slim Mace" "Expert Construct Hammer" "Attuned Wand" "Siphoning Wand" "Expert Intricate Gloves" "Hexer's Robe" "Expert Spined Bracers" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Scalper's Jacket" "Expert Sacrificial Mantle" "Expert Altar Robe" "Expert Serpentscale Coat" "Expert Vaal Cuirass" "Expert Hunter Hood" "Expert Feathered Tiara" "Talon Claw" "Edged Claw" "Cinquedea" "Dark Blade" "Dread Hatchet" "Torment Club" "Helix Spear" "Dualstring Bow" "Ultra Greatsword" "Vile Greataxe" "Expert Leaden Greathammer" "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Crackling Quarterstaff" "Expert Dyad Crossbow" "Expert Bombard Crossbow" "Expert Tense Crossbow" "Primed Quiver" "Expert Omen Crest Shield" "Expert Edged Buckler" "Expert Stone Tower Shield" "Expert Scalper's Jacket" "Expert Wayfarer Jacket" "Expert Sacrificial Mantle" "Expert Shaman Mantle" "Expert Altar Robe" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Serpentscale Coat" "Expert Studded Vest"
@@ -394,11 +399,10 @@ Show
 	AreaLevel >= 65
 	SetFontSize 35
 
-Hide
-	Rarity <= Magic
-	AreaLevel >= 65
+# -----------
+# Magics
+# -----------
 
 Hide
 	Rarity <= Magic
-	Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Mace" "Staff" "Quarter" "Crossbow" "Wand" "Sceptre" "Foci" "Quiver" "Belt" "Bows" "Rings" "Belt" "Amulet"
 	AreaLevel >= 65
