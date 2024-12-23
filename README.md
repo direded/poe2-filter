@@ -2,7 +2,7 @@
 
 ### Скриптом (быстрое обновление)
 \* *работает в случае, если вы не меняли каким-то образом расположение папки с фильтрами PoE2*
-1. Скачать `direded_udpate_filter.bat`
+1. Скачать [direded_update_filter.bat](https://raw.githubusercontent.com/direded/poe2-filter/refs/heads/master/direded_update_filter.bat)
 2. Запустить
 3. Для обновления фильтра запустить еще раз
 
