@@ -1,0 +1,62 @@
+<filterBuilder>
+	<styles>
+		<style id="base" />
+
+		<style id="S"
+				parent="base"	
+				font="35"
+				text="255 255 255 255"
+				border="255 0 0 255"
+				bg="255 255 255 255"
+				alert="6 300"
+				effect="red"
+				icon="0 Red Circle"
+				customAlertOpt="'direded_filter/zombie_svo.mp3' 300"
+			/>
+		<style id="A"
+				parent="base"
+			/>
+		<style id="B" />
+		<style id="C" />
+		<style id="D" />
+	</styles>
+	
+	<currencies>
+		<e name="Scroll of Wisdom" price="1" />
+		<e name="Orb of Transmutation" price="1" />
+		<e name="Orb of Augmentation" price="1" />
+		<e name="Regal Orb" price="1" />
+		<e name="Exalted Orb" price="1" />
+		<e name="Chaos Orb" price="1" />
+		<e name="Vaal Orb" price="1" />
+		<e name="Orb of Alchemy" price="1" />
+		<e name="Divine Orb" price="1" />
+		<e name="Orb of Chance" price="1" />
+		<e name="Orb of Annulment" price="1" />
+		<e name="Artificer's Orb" price="1" />
+		<e name="Mirror of Kalandra" price="1" />
+
+		<e name="Transmutation Shard" price="1" />
+		<e name="Regal Shard" price="1" />
+		<e name="Artificer's Shard" price="1" />
+		<e name="Chance Shard" price="1" />
+
+		<e name="Armourer's Scrap" price="1" />
+		<e name="Blacksmith's Whetstone" price="1" />
+		<e name="Arcanist's Etcher" price="1" />
+		<e name="Glassblower's Bauble" price="1" />
+		<e name="Gemcutter's Prism" price="1" />
+
+		<e name="Lesser Jeweller's Orb" price="1" />
+		<e name="Greater Jeweller's Orb" price="1" />
+		<e name="Perfect Jeweller's Orb" price="1" />
+	</currencies>
+
+	<stylePrices>
+		<e name="" fromPrice="" />
+	</stylePrices>
+
+	<includeFiles>
+		<file path="items.txt"/>
+	</includeFiles>
+</filterBuilder>
