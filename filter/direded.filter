@@ -20,7 +20,7 @@ PlayEffect Red
 MinimapIcon 0 Red Circle
 
 Show
-BaseType "Greater Essence of the Electricity" "Greater Jeweller's Orb" "Greater Essence of the Infinite" "Greater Essence of the Mind" "Distilled Despair" "Greater Essence of the Enhancement" "Greater Essence of Ruin" "Greater Essence of Battle" "Orb of Chance" "Omen of" "Orb of Annulment"
+BaseType "Greater Essence of Electricity" "Greater Jeweller's Orb" "Greater Essence of the Infinite" "Greater Essence of the Mind" "Distilled Despair" "Greater Essence of Enhancement" "Greater Essence of Ruin" "Greater Essence of Battle" "Orb of Chance" "Omen of" "Orb of Annulment"
 SetFontSize 40
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
@@ -30,7 +30,7 @@ PlayEffect White
 MinimapIcon 1 Orange Circle
 
 Show
-BaseType "Distilled Disgust" "Greater Essence of Flames" "Distilled Paranoia" "Greater Essence of the Body" "Vaal Orb" "Essence of the Electricity"
+BaseType "Distilled Disgust" "Greater Essence of Flames" "Distilled Paranoia" "Greater Essence of the Body" "Vaal Orb" "Essence of Electricity"
 SetFontSize 35
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
@@ -66,7 +66,7 @@ SetTextColor 255 207 132
 SetBorderColor 255 207 132
 
 Show
-BaseType "Adaptive Catalyst" "Reaver Catalyst" "Essence of Ruin" "Essence of Flames" "Essence of the Infinite" "Essence of the Mind" "Essence of the Body" "Essence of the Enhancement" "Essence of Sorcery" "Essence of Ice" "Essence of Battle" "Neural Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Greater Essence of Ice" " Artifact" "Arcanist's Etcher" "Blacksmith's Whetstone" "Regal Orb" "Artificer's Orb"
+BaseType "Adaptive Catalyst" "Reaver Catalyst" "Essence of Ruin" "Essence of Flames" "Essence of the Infinite" "Essence of the Mind" "Essence of the Body" "Essence of Enhancement" "Essence of Sorcery" "Essence of Ice" "Essence of Battle" "Neural Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Greater Essence of Ice" " Artifact" "Arcanist's Etcher" "Blacksmith's Whetstone" "Regal Orb" "Artificer's Orb"
 SetFontSize 30
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
@@ -168,7 +168,7 @@ Show
 # Maps
 
 Show
-	BaseType "Simulacrum" " Tablet" "Breachstone" "Barya" "Ultimatum" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook"
+	BaseType "Simulacrum" " Tablet" "Breachstone" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook"
 	SetTextColor 255 207 255
 	SetBorderColor 255 207 255
 	SetBackgroundColor 65 20 80

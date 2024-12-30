@@ -1,62 +1,206 @@
 <filterBuilder>
 	<styles>
-		<style id="base" />
+		<style id="base"
+				font="25"
+			/>
 
-		<style id="S"
-				parent="base"	
-				font="35"
-				text="255 255 255 255"
-				border="255 0 0 255"
-				bg="255 255 255 255"
-				alert="6 300"
-				effect="red"
-				icon="0 Red Circle"
+		<style id="S_Mirror"
+				parent="S"
 				customAlertOpt="'direded_filter/zombie_svo.mp3' 300"
 			/>
-		<style id="A"
-				parent="base"
+		<style id="S"
+				font="45"
+				text="255 0 0 255"
+				border="255 0 0 255"
+				background="255 255 255 255"
+				alert="6 300"
+				effect="Red"
+				icon="0 Red Circle"
 			/>
-		<style id="B" />
-		<style id="C" />
-		<style id="D" />
+		<style id="A"
+				font="40"
+				text="255 255 255 255"
+				border="255 255 255 255"
+				background="240 90 35 255"
+				effect="White"
+				icon="1 Orange Circle"
+				alert="1 300"
+			/>
+		<style id="B"
+				parent="C"
+			/>
+		<style id="C"
+				font="35"
+				text="255 207 132"
+				border="255 207 132"
+				background="76 51 12"
+				icon="2 White Circle"
+				effect="Grey"
+				alert="2 300"
+			/>
+		<style id="D"
+				parent="C"
+			/>
+		<style id="E"
+				font="30"
+				text="255 207 132"
+				border="255 207 132"
+			/>
+		
+		<style id="F"
+				parent="E"
+			/>
+
+		<style id="hide"
+				show="false"
+				font="25"
+			/>
+
+		<style id="unique_S"
+				parent="unique_A"
+				font="45"
+				alert="5 300"
+				icon="0 Brown Star"
+			/>
+
+		<style id="unique_A"
+				parent="unique_B"
+				font="37"
+				icon="1 Brown Star"
+			/>
+
+		<style id="unique_B"
+				font="35"
+				text="175 96 37 255"
+				border="175 96 37 255"
+				background="53 13 13 255"
+				alert="2 300"
+				effect="Brown"
+				icon="0 Brown Star"
+			/>
+
+		<style id="rare_item_S"
+				parent="rare_item"
+				font="40"
+				text="255 215 0"
+				border="255 215 0"
+				background="20 20 0 255"
+			/>
+
+		<style id="rare_item"
+				font="34"
+				background="20 20 0 240"
+				border="20 20 0 255"
+			/>
+
+		<style id="rare_small"
+				parent="rare_item"
+				font="36"
+				effect="Yellow"
+				icon="1 Yellow Diamond"
+			/>
+
+		
+		<style id="rare_jewel"
+				parent="rare_small"
+				text="0 240 190"
+				border="0 240 190"
+				background="70 70 195"
+				effect="Cyan"
+				icon="1 Cyan Hexagon"
+			/>
 	</styles>
 	
 	<currencies>
-		<e name="Scroll of Wisdom" price="1" />
-		<e name="Orb of Transmutation" price="1" />
-		<e name="Orb of Augmentation" price="1" />
-		<e name="Regal Orb" price="1" />
-		<e name="Exalted Orb" price="1" />
-		<e name="Chaos Orb" price="1" />
-		<e name="Vaal Orb" price="1" />
-		<e name="Orb of Alchemy" price="1" />
-		<e name="Divine Orb" price="1" />
-		<e name="Orb of Chance" price="1" />
-		<e name="Orb of Annulment" price="1" />
-		<e name="Artificer's Orb" price="1" />
-		<e name="Mirror of Kalandra" price="1" />
+		<e name="Scroll of Wisdom" 			price="1/1800" 		style="hide" />
+		<e name="Orb of Transmutation" 		price="1/80" 		style="hide" />
+		<e name="Orb of Augmentation" 		price="1/220" 		style="hide" />
+		<e name="Regal Orb" 				price="1/7" 		style="F" />
+		<e name="Exalted Orb" 				price="1" 			style="C" />
+		<e name="Chaos Orb" 				price="2.4" 		style="C" />
+		<e name="Vaal Orb" 					price="3.43" 		style="B" />
+		<e name="Orb of Alchemy" 			price="1/2.17" 		style="D" />
+		<e name="Divine Orb" 				price="119" 		style="S" />
+		<e name="Orb of Chance" 			price="7" 			style="A" />
+		<e name="Orb of Annulment" 			price="4.65" 		style="A"/>
+		<e name="Artificer's Orb" 			price="1/7" 		style="F" />
+		<e name="Mirror of Kalandra" 		price="100500" 		style="S_Mirror" />
 
-		<e name="Transmutation Shard" price="1" />
-		<e name="Regal Shard" price="1" />
-		<e name="Artificer's Shard" price="1" />
-		<e name="Chance Shard" price="1" />
+		<e name="Transmutation Shard" 		price="1/10000" />
+		<e name="Regal Shard" 				price="1/10000" />
+		<e name="Artificer's Shard" 		price="1/10000" />
+		<e name="Chance Shard" 				price="1/10000" />
 
-		<e name="Armourer's Scrap" price="1" />
-		<e name="Blacksmith's Whetstone" price="1" />
-		<e name="Arcanist's Etcher" price="1" />
-		<e name="Glassblower's Bauble" price="1" />
-		<e name="Gemcutter's Prism" price="1" />
+		<e name="Armourer's Scrap"			price="1/2" />
+		<e name="Blacksmith's Whetstone" 	price="1/7" />
+		<e name="Arcanist's Etcher" 		price="1/7" />
+		<e name="Glassblower's Bauble" 		price="1/1.07" />
+		<e name="Gemcutter's Prism" 		price="2.2" />
 
-		<e name="Lesser Jeweller's Orb" price="1" />
-		<e name="Greater Jeweller's Orb" price="1" />
-		<e name="Perfect Jeweller's Orb" price="1" />
+		<e name="Lesser Jeweller's Orb" 	price="1/20" />
+		<e name="Greater Jeweller's Orb" 	price="37" 			style="A"/>
+		<e name="Perfect Jeweller's Orb" 	price="300" />
+		
+		<e name="Essence of the Body" 		price="1/3" />
+		<e name="Essence of the Mind" 		price="1/3" />
+		<e name="Essence of the Enhancement" 	price="1/3" />
+		<e name="Essence of Electricity" 	price="3" />
+		<e name="Essence of the Infinite" 	price="1/3" />
+		<e name="Essence of Flames" 		price="1/3" />
+		<e name="Essence of Torment" 		price="1.09" />
+		<e name="Essence of Battle" 		price="1/3.5" />
+		<e name="Essence of Sorcery" 		price="1/3.33" />
+		<e name="Essence of Ruin" 			price="1/3" />
+		<e name="Essence of Haste" 			price="1.6" />
+		<e name="Essence of Ice" 			price="1/3.5" />
+
+		<e name="Greater Essence of the Body" 		price="3.5" />
+		<e name="Greater Essence of the Mind" 		price="31.5" />
+		<e name="Greater Essence of the Enhancement" 	price="17" />
+		<e name="Greater Essence of Electricity" 	price="42" />
+		<e name="Greater Essence of the Infinite" 	price="32.5" />
+		<e name="Greater Essence of Flames" 		price="5.4" />
+		<e name="Greater Essence of Torment" 		price="69" />
+		<e name="Greater Essence of Battle" 		price="7.5" />
+		<e name="Greater Essence of Sorcery" 		price="74" />
+		<e name="Greater Essence of Ruin" 			price="13" />
+		<e name="Greater Essence of Haste" 			price="188" />
+		<e name="Greater Essence of Ice" 			price="1/6" />
+
+
+		<e name="Distilled Ire" 			price="1/2.1" />
+		<e name="Distilled Guilt" 			price="1.25" />
+		<e name="Distilled Greed" 			price="1.73" />
+		<e name="Distilled Paranoia" 		price="5" />
+		<e name="Distilled Envy" 			price="2.3" />
+		<e name="Distilled Disgust" 		price="6.5" />
+		<e name="Distilled Despair" 		price="20" />
+		<e name="Distilled Fear" 			price="58.25" />
+		<e name="Distilled Suffering" 		price="174" />
+		<e name="Distilled Isolation" 		price="525" />
+
+		<e name="Neural Catalyst" 			price="1/4.4" />
+		<e name="Carapace Catalyst" 		price="1/30" />
+		<e name="Flesh Catalyst" 			price="1/29" />
+		<e name="Adaptive Catalyst" 		price="1/2.7" />
+		<e name="Xoph's Catalyst" 			price="1/40" />
+		<e name="Tul's Catalyst" 			price="1/5" />
+		<e name="Esh's Catalyst" 			price="1/5.5" />
+		<e name="Uul-Netol's Catalyst" 		price="1/25" />
+		<e name="Reaver Catalyst" 			price="1/3" />
+		<e name="Sibilant Catalyst" 		price="1/25" />
+		<e name="Chayula's Catalyst" 		price="1/8" />
+		<e name="Skittering's Catalyst" 	price="1/20" />
+
+		<e name="Omen of" 					price="6"			style="A"/>
+
+		<e name="Breach Splinter" 			price="1/3.8" 		style="C" />
+		<e name="Simulacrum Splinter" 		price="1" 			style="C" />
+		<e name="Exotic Coinage" 			price="1/2" 		style="C" />
+		<e name=" Artifact" 				price="1/7" />
 	</currencies>
 
-	<stylePrices>
-		<e name="" fromPrice="" />
-	</stylePrices>
-
 	<includeFiles>
-		<file path="items.txt"/>
+		<file path="items.tfilter" />
 	</includeFiles>
 </filterBuilder>

@@ -1,40 +1,20 @@
 # ------------------
 # Unique
-# ------------------
 
 Show
 	Rarity Unique
-	BaseType "Heavy Belt"
-	SetTextColor 175 96 37 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 53 13 13 255
-	PlayAlertSound 5 300
-	PlayEffect Brown
-	MinimapIcon 0 Red Star
-	SetFontSize 45
+	BaseType "Heavy Belt" "Flask" "Crucible Tower Shield" "Vase Relic" "Time-Lost Diamond" "Diamond" "Smuggler Coat" "Armoured Cap" "Fine Bracers" "Burnished Gauntlets" "Furtive Wraps" "Stone Tower Shield" "Conqueror Plate" "Stellar Amulet"
+	{% style unique_S %}
 
 Show
 	Rarity Unique
-	BaseType "Ultimate Life Flask" "Crucible Tower Shield" "Silk Robe" "Vase Relic" "Time-Lost Diamond" "Diamond" "Spiked Club" "Smuggler Coat" "Armoured Cap" "Fine Bracers" "Burnished Gauntlets" "Furtive Wraps" "Stone Tower Shield" "Omen Crest Shield" "Grand Regalia" "Crude Bow" "Long Quarterstaff" "Shrine Sceptre" "Flask" "Conqueror Plate"
-	SetTextColor 175 96 37 255
-	SetBorderColor 175 96 37 255
-	SetBackgroundColor 53 13 13 255
-	PlayAlertSound 3 300
-	PlayEffect Brown
-	MinimapIcon 1 Brown Star
-	SetFontSize 40
-
+	BaseType "Spiked Club" "Crude Bow"
+	{% style unique_A %}
 
 Show
 	Rarity Unique
 	Class "Rings" "Amulets" "Belts"
-	SetTextColor 175 96 37 255
-	SetBorderColor 175 96 37 255
-	SetBackgroundColor 53 13 13 255
-	PlayAlertSound 3 300
-	PlayEffect Brown
-	MinimapIcon 1 Brown Star
-	SetFontSize 40
+	{% style unique_B %}
 
 Hide
 	Rarity Unique
@@ -46,13 +26,7 @@ Hide
 Show
 	BaseType "Uncut"
 	ItemLevel = 20
-	SetFontSize 45
-	SetTextColor 255 0 0 255
-	SetBorderColor 255 0 0 255
-	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 6 300
-	PlayEffect Red
-	MinimapIcon 0 Red Star
+	{% style S %}
 
 Hide
 	BaseType "Uncut"
@@ -81,35 +55,18 @@ Show
 	MinimapIcon 2 Cyan Triangle
 	PlayEffect Cyan
 
-# Special A Tier - Rare Jewels
+#--------------------------
+# Maps
+
 Show
-	Class "Jewel"
-	Rarity Rare
-	SetTextColor 0 240 190
-	SetBorderColor 0 240 190
-	SetBackgroundColor 190 30 15
+	BaseType "Simulacrum" " Tablet" "Breachstone" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook"
+	SetTextColor 255 207 255
+	SetBorderColor 255 207 255
+	SetBackgroundColor 65 20 80
+	PlayAlertSound 2 300
+	PlayEffect Pink
+	MinimapIcon 1 Pink Square
 	SetFontSize 40
-	MinimapIcon 2 Cyan Triangle
-	PlayEffect Cyan
-
-# Special B Tier - Any Jewels
-Show
-	Class "Jewel"
-	Rarity Magic
-	SetTextColor 0 240 190
-	SetBorderColor 0 240 190
-	SetFontSize 37
-	PlayEffect Cyan Temp
-
-# Special B Tier - Any Runes and Charms
-Hide
-	BaseType "Rune" "Charm"
-	SetTextColor 0 240 190
-	PlayEffect Cyan Temp
-
-#--------------------------
-# Socketables and Special Character Equipment
-#--------------------------
 
 Show
 	BaseType "Waystone" 
@@ -136,96 +93,73 @@ Show
 	SetFontSize 35
 
 
-Hide
-	BaseType "Barya" "Ultimatum"
-
 #--------------------------
-# Value Rares
-#--------------------------
-
-Show
-	Class "Rings" "Amulets"
-	Rarity Rare
-	SetFontSize 40
-	SetTextColor 233 206 75
-	SetBorderColor 233 206 75
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Diamond
-
-#--------------------------
-# Rings, Amulets, Belts
-#--------------------------
+# Good bases
 
 Show
 	Rarity Normal
 	BaseType "Heavy Belt"
-	SetFontSize 35
-
-#--------------------------
-# Salvagable Items
-#--------------------------
-
-
-Hide
-	Quality > 10
-	Rarity Normal
-	SetBorderColor 200 200 200
-	SetFontSize 35
-
-Hide
-	Quality > 10
-	Rarity Magic
-	SetBorderColor 0 0 200
-	SetFontSize 35
-
-# -----------
-# Rares
-# -----------
-
-Show	
-	BaseType "Breach Ring"
-	SetBorderColor 230 20 20 255
-	SetFontSize 40
-
-Show
-	Class "Bows"
-	Rarity <= Magic
-	BaseType "Dualstring" "Zealot"
-	ItemLevel >= 82
-	SetBorderColor 255 255 255 255
-	SetFontSize 37
-
-Show
-	BaseType "Dualstring" "Zealot"
-	Rarity Rare
-	SetBorderColor 255 255 255 255
-	SetFontSize 40
-
-Show
-	Rarity Rare
-	BaseType "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Sectioned Bracers" "Expert Spined Bracers" "Expert Firm Bracers" "Expert Swathed Cap" "Expert Hunter Hood" "Expert Swathed Cap" "Expert Chain Tiara" "Expert Wicker Tiara" "Expert Feathered Tiara" "Advanced Dualstring Bow" "Expert Bombard Crossbow" "Expert Sturdy Crossbow" "Expert Tense Crossbow" "Expert Forlorn Crossbow" "Expert Varnished Crossbow" "Expert Dualstring Bow" "Expert Composite Bow" "Expert Warden Bow" "Expert Zealot Bow" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crackling Quarterstaff" "Expert Forge Maul" "Expert Temple Maul" "Expert Leaden Greathammer" "Expert Crumbling Maul" "Expert Brigand Mace" "Expert Plated Mace" "Expert Slim Mace" "Expert Construct Hammer" "Attuned Wand" "Siphoning Wand" "Expert Intricate Gloves" "Hexer's Robe" "Expert Spined Bracers" "Expert Lizardscale Boots" "Expert Feathered Sandals" "Expert Scalper's Jacket" "Expert Sacrificial Mantle" "Expert Altar Robe" "Expert Serpentscale Coat" "Expert Vaal Cuirass" "Expert Hunter Hood" "Expert Feathered Tiara" "Talon Claw" "Edged Claw" "Cinquedea" "Dark Blade" "Dread Hatchet" "Torment Club" "Helix Spear" "Dualstring Bow" "Ultra Greatsword" "Vile Greataxe" "Expert Leaden Greathammer" "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Barrier Quarterstaff" "Expert Slicing Quarterstaff" "Expert Crackling Quarterstaff" "Expert Dyad Crossbow" "Expert Bombard Crossbow" "Expert Tense Crossbow" "Primed Quiver" "Expert Omen Crest Shield" "Expert Edged Buckler" "Expert Stone Tower Shield" "Expert Scalper's Jacket" "Expert Wayfarer Jacket" "Expert Sacrificial Mantle" "Expert Shaman Mantle" "Expert Altar Robe" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Serpentscale Coat" "Expert Studded Vest"
 	SetFontSize 30
 
 Show
+	Rarity Normal
+	BaseType "Stellar Amulet" "Breach Ring"
+	SetFontSize 40
+
+#--------------------------
+# Rares
+
+Show
+	BaseType "Breach Ring"
+	{% style rare_item_S %}
+	SetBorderColor 230 20 20 255
+
+Show
+	BaseType "Dualstring" "Zealot"
 	Rarity Rare
-	Class "Sceptres"
-	SetBorderColor 255 0 255 255
-	SetFontSize 27
+	{% style rare_item_S %}
+
+Show
+	Rarity <= Magic
+	BaseType "Dualstring" "Zealot" "Wand"
+	ItemLevel >= 82
+	{% style rare_item_S %}
 
 Show
 	Rarity Rare
-	Class "Rings" "Belt" "Amulet"
-	AreaLevel >= 65
-	SetFontSize 35
+	BaseType "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Chain Tiara" "Expert Wicker Tiara" "Expert Feathered Tiara" "Expert Warden Bow" "Expert Zealot Bow" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crackling Quarterstaff" "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Lizardscale Boots" "Expert Scalper's Jacket" "Expert Sacrificial Mantle" "Expert Altar Robe" "Expert Serpentscale Coat" "Expert Vaal Cuirass" "Expert Hunter Hood" "Dualstring Bow" "Expert Barrier Quarterstaff" "Primed Quiver" "Expert Edged Buckler" "Expert Stone Tower Shield" "Expert Scalper's Jacket" "Expert Shaman Mantle" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Studded Vest" "Sceptre" "Wand"
+	{% style rare_item %}
+
+Show
+	Class "Rings" "Amulets"
+	Rarity Rare
+	{% style rare_small %}
+
+#--------------------------
+# Jewels
+Show
+	Class "Jewels"
+	{% style rare_jewel %}
+
+#--------------------------
+# Hide shit
+
+Hide
+	Rarity Rare
 
 Hide
 	Rarity Rare
 	AreaLevel >= 65
-
-# -----------
-# Magics
-# -----------
 
 Hide
 	Rarity <= Magic
 	AreaLevel >= 65
+
+Hide
+	BaseType "Rune" "Charm"
+
+Hide
+	BaseType "Barya" "Ultimatum"
+	
+Show
+	SetFontSize 25
