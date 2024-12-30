@@ -48,7 +48,7 @@ public class CurrencyService {
 				baseTypeText += $" \"{item.baseType}\"";
 			});
 			result += (g.Item2.show ? "Show" : "Hide") + "\n";
-			result += "Class \"Currency\"\n";
+			//result += "Class \"Currency\"\n";
 			result += $"BaseType{baseTypeText}\n";
 			result += g.Item2.ConvertToFilterRuleStyleString() + "\n";
 		}

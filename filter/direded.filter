@@ -1,5 +1,4 @@
 Show
-Class "Currency"
 BaseType "Mirror of Kalandra"
 SetFontSize 45
 SetTextColor 255 0 0 255
@@ -11,8 +10,7 @@ MinimapIcon 0 Red Circle
 CustomAlertSoundOptional "direded_filter/zombie_svo.mp3" 300
 
 Show
-Class "Currency"
-BaseType "Perfect Jeweller's Orb" "Divine Orb"
+BaseType "Distilled Isolation" "Perfect Jeweller's Orb" "Greater Essence of Haste" "Distilled Suffering" "Divine Orb" "Greater Essence of Sorcery" "Greater Essence of Torment" "Distilled Fear"
 SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
@@ -22,8 +20,7 @@ PlayEffect Red
 MinimapIcon 0 Red Circle
 
 Show
-Class "Currency"
-BaseType "Greater Jeweller's Orb" "Orb of Chance" "Orb of Annulment"
+BaseType "Greater Essence of the Electricity" "Greater Jeweller's Orb" "Greater Essence of the Infinite" "Greater Essence of the Mind" "Distilled Despair" "Greater Essence of the Enhancement" "Greater Essence of Ruin" "Greater Essence of Battle" "Orb of Chance" "Omen of" "Orb of Annulment"
 SetFontSize 40
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
@@ -33,8 +30,7 @@ PlayEffect White
 MinimapIcon 1 Orange Circle
 
 Show
-Class "Currency"
-BaseType "Distilled" "Catalyst" "Essence of" "Vaal Orb"
+BaseType "Distilled Disgust" "Greater Essence of Flames" "Distilled Paranoia" "Greater Essence of the Body" "Vaal Orb" "Essence of the Electricity"
 SetFontSize 35
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
@@ -44,8 +40,7 @@ PlayEffect Grey
 MinimapIcon 2 White Circle
 
 Show
-Class "Currency"
-BaseType "Chaos Orb" "Gemcutter's Prism" "Simulacrum Splinter" "Exalted Orb" "Exotic Coinage" "Breach Splinter"
+BaseType "Chaos Orb" "Distilled Envy" "Gemcutter's Prism" "Distilled Greed" "Essence of Haste" "Distilled Guilt" "Essence of Torment" "Simulacrum Splinter" "Exalted Orb" "Exotic Coinage" "Breach Splinter"
 SetFontSize 35
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
@@ -55,7 +50,6 @@ PlayEffect Grey
 MinimapIcon 2 White Circle
 
 Show
-Class "Currency"
 BaseType "Glassblower's Bauble" "Orb of Alchemy"
 SetFontSize 35
 SetTextColor 255 207 132
@@ -66,22 +60,19 @@ PlayEffect Grey
 MinimapIcon 2 White Circle
 
 Show
-Class "Currency"
-BaseType "Armourer's Scrap"
+BaseType "Armourer's Scrap" "Distilled Ire"
 SetFontSize 30
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 
 Show
-Class "Currency"
-BaseType "Blacksmith's Whetstone" "Arcanist's Etcher" "Regal Orb" "Artificer's Orb" " Artifact"
+BaseType "Adaptive Catalyst" "Reaver Catalyst" "Essence of Ruin" "Essence of Flames" "Essence of the Infinite" "Essence of the Mind" "Essence of the Body" "Essence of the Enhancement" "Essence of Sorcery" "Essence of Ice" "Essence of Battle" "Neural Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Greater Essence of Ice" " Artifact" "Arcanist's Etcher" "Blacksmith's Whetstone" "Regal Orb" "Artificer's Orb"
 SetFontSize 30
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 
 Hide
-Class "Currency"
-BaseType "Lesser Jeweller's Orb" "Orb of Transmutation" "Orb of Augmentation" "Scroll of Wisdom" "Regal Shard" "Transmutation Shard" "Chance Shard" "Artificer's Shard"
+BaseType "Chayula's Catalyst" "Skittering's Catalyst" "Lesser Jeweller's Orb" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Flesh Catalyst" "Carapace Catalyst" "Xoph's Catalyst" "Orb of Transmutation" "Orb of Augmentation" "Scroll of Wisdom" "Regal Shard" "Artificer's Shard" "Chance Shard" "Transmutation Shard"
 SetFontSize 25
 
 Hide
