@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CSharpTutorials;
 using System.Xml;
 using PoeFilter.Utilities;
+using System.Globalization;
 
 namespace PoeFilter.Models;
 
@@ -13,6 +14,7 @@ public class Currency {
 
 	public string baseType;
 	public double price;
+	public string? styleOverrideId;
 
 	public static Currency Parse(XmlElement root) {
 
@@ -22,6 +24,7 @@ public class Currency {
 		var c = new Currency();
 		c.baseType = root.GetAttribute("name");
 		c.price = ParseTextPrice(root.GetAttribute("price"));
+		c.styleOverrideId = XmlUtility.GetOrDefaultAttribute(root, "style", null);
 		return c;
 	}
 
@@ -33,9 +36,9 @@ public class Currency {
 	static double ParseTextPrice(string message) {
 		if (message.Contains("/")) {
 			var parts = message.Split('/');
-			return double.Parse(parts[0]) / double.Parse(parts[1]);
+			return double.Parse(parts[0], CultureInfo.InvariantCulture) / double.Parse(parts[1], CultureInfo.InvariantCulture);
 		} else {
-			return double.Parse(message);
+			return double.Parse(message, CultureInfo.InvariantCulture);
 		}
 	}
 }

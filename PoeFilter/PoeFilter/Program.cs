@@ -17,19 +17,9 @@ namespace CSharpTutorials {
 				styleService = styleService
 			};
 
-			using (var configReader = new StreamReader(Assembly.GetExecutingAssembly().GetManifestResourceStream("PoeFilter.Resources.filter_builder.xml")!))
+			using (var configReader = new StreamReader("filter_builder.xml"))
 			using (var filterWriter = new StreamWriter("result.filter")) {
 				filterBuilder.BuildFilter(filterWriter, configReader);
-			}
-		}
-	}
-
-	static class Exceptions {
-		public class Common : Exception {
-			public Common() : base() {
-			}
-
-			public Common(string message) : base(message) {
 			}
 		}
 	}

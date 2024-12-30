@@ -44,9 +44,9 @@ public class Style {
 		style.icon = XmlUtility.GetOrDefaultAttribute(root, "icon", null);
 		style.effect = XmlUtility.GetOrDefaultAttribute(root, "effect", null);
 		style.alert = XmlUtility.GetOrDefaultAttribute(root, "alert", null);
-		style.backgroundColor = XmlUtility.GetOrDefaultAttribute(root, "backgroundColor", null);
-		style.borderColor = XmlUtility.GetOrDefaultAttribute(root, "borderColor", null);
-		style.textColor = XmlUtility.GetOrDefaultAttribute(root, "textColor", null);
+		style.backgroundColor = XmlUtility.GetOrDefaultAttribute(root, "bg", null);
+		style.borderColor = XmlUtility.GetOrDefaultAttribute(root, "border", null);
+		style.textColor = XmlUtility.GetOrDefaultAttribute(root, "text", null);
 		if (style.customAlertOpt != null) style.customAlertOpt = style.customAlertOpt.Replace("'", "\"");
 		return style;
 	}

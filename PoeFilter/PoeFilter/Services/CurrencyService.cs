@@ -26,7 +26,7 @@ public class CurrencyService {
 		var groups = new List<(List<Currency>, Style)>();
 		foreach (var c in currencies) {
 			bool itemAssigned = false;
-			var style = GetStyleByPrice(c.price);
+			var style = GetStyle(c);
 			if (style == null) break;
 			foreach (var g in groups) {
 				if (style == g.Item2) {
@@ -47,8 +47,6 @@ public class CurrencyService {
 			var baseTypeText = "";
 			g.Item1.ForEach(item => {
 				baseTypeText += $" \"{item.baseType}\"";
-				Console.WriteLine(item.baseType);
-				Console.WriteLine(baseTypeText);
 			});
 			result += "Show\n";
 			result += "Class \"Currency\"\n";
@@ -60,13 +58,16 @@ public class CurrencyService {
 		return result;
 	}
 
-	public Style? GetStyleByPrice(double price) {
+	public Style? GetStyle(Currency c) {
+		var price = c.price;
 		var styles = styleService.styles;
-		if (price > 30) {
+		if (c.styleOverrideId != null) {
+			return styles[c.styleOverrideId];
+		} else if (price > 50) {
 			return styles["S"];
 		} else if (price > 5) {
 			return styles["A"];
-		} else if (price > 0.7) {
+		} else if (price > 1 / 3) {
 			return styles["B"];
 		} else if (price >= 1 / 8) {
 			return styles["C"];
@@ -80,12 +81,11 @@ public class CurrencyService {
 @"# Unknown currency
 Show
 Class ""Currency""
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect Pink
-MinimapIcon 1 White Circle
+SetTextColor 255 0 0
+SetBorderColor 0 255 0
+SetBackgroundColor 50 50 180
+PlayAlertSound 7 300
+MinimapIcon 1 Yellow Pentagon
 
 Hide
 BaseType == ""Gold""

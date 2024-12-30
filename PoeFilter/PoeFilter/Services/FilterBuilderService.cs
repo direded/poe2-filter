@@ -14,7 +14,7 @@ class FilterBuilderService {
 		configReader.Load(cr);
 
 		if (configReader.FirstChild == null) {
-			throw new Exceptions.Common("no root found");
+			throw new Exception("no root found");
 		}
 
 		styleService.ParseStyleXml(configReader.FirstChild.SelectSingleNode("styles")!);
