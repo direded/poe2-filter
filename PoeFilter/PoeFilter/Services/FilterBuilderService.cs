@@ -1,12 +1,13 @@
-﻿using CSharpTutorials;
-using System.Xml;
+﻿using System.Xml;
 
 namespace PoeFilter.Services;
 
 
 class FilterBuilderService {
+
 	public required StyleService styleService;
 	public required CurrencyService currencyService;
+	public required TemplateBuilderService templateBuilderService;
 
 	public void BuildFilter(StreamWriter filterWriter, StreamReader cr) {
 
@@ -17,11 +18,12 @@ class FilterBuilderService {
 			throw new Exception("no root found");
 		}
 
+		templateBuilderService.ParseTemplatesXml(configReader.FirstChild.SelectSingleNode("includeFiles")!);
 		styleService.ParseStyleXml(configReader.FirstChild.SelectSingleNode("styles")!);
 		currencyService.ParseCurrencyXml(configReader.FirstChild.SelectSingleNode("currencies")!);
 
-		filterWriter.WriteLine(currencyService.ConvertToFilterRulesString());
-
+		filterWriter.WriteLine(currencyService.CreateFilterRules());
+		filterWriter.WriteLine(templateBuilderService.CreateFilterRules());
 	}
 
 	public void BuildFilter(string targetFilterPath, string configPath) {

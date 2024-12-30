@@ -18,7 +18,8 @@ public class StyleService {
 
 		var baseStyle = styles["base"];
 		foreach (var style in styles.Values) {
-			style.parent = styles.GetValueOrDefault("base", baseStyle);
+			if (style.id == "base") continue;
+			style.parent = styles.GetValueOrDefault(style.parentId ?? "base", baseStyle);
 		}
 	}
 }

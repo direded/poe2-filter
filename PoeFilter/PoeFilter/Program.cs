@@ -9,12 +9,19 @@ namespace CSharpTutorials {
 		static void Main(string[] args) {
 
 			var styleService = new StyleService();
+
+			var templateBuilderService = new TemplateBuilderService() {
+				styleService = styleService
+			};
+
 			var currencyService = new CurrencyService() {
 				styleService = styleService
 			};
+
 			var filterBuilder = new FilterBuilderService() {
 				currencyService = currencyService,
-				styleService = styleService
+				styleService = styleService,
+				templateBuilderService = templateBuilderService
 			};
 
 			using (var configReader = new StreamReader("filter_builder.xml"))

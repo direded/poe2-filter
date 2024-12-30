@@ -6,6 +6,7 @@ namespace PoeFilter.Models;
 public class Style {
 
 	public string id;
+	public bool show = true;
 	public string? parentId;
 	public string? font;
 	public string? textColor;
@@ -38,13 +39,14 @@ public class Style {
 
 		var style = new Style();
 		style.id = root.GetAttribute("id");
+		style.show = bool.Parse(XmlUtility.GetOrDefaultAttribute(root, "show", "true")!);
 		style.parentId = XmlUtility.GetOrDefaultAttribute(root, "parent", null);
 		style.font = XmlUtility.GetOrDefaultAttribute(root, "font", null);
 		style.customAlertOpt = XmlUtility.GetOrDefaultAttribute(root, "customAlertOpt", null);
 		style.icon = XmlUtility.GetOrDefaultAttribute(root, "icon", null);
 		style.effect = XmlUtility.GetOrDefaultAttribute(root, "effect", null);
 		style.alert = XmlUtility.GetOrDefaultAttribute(root, "alert", null);
-		style.backgroundColor = XmlUtility.GetOrDefaultAttribute(root, "bg", null);
+		style.backgroundColor = XmlUtility.GetOrDefaultAttribute(root, "background", null);
 		style.borderColor = XmlUtility.GetOrDefaultAttribute(root, "border", null);
 		style.textColor = XmlUtility.GetOrDefaultAttribute(root, "text", null);
 		if (style.customAlertOpt != null) style.customAlertOpt = style.customAlertOpt.Replace("'", "\"");
@@ -54,15 +56,31 @@ public class Style {
 	private Style? _computedStyle;
 	private Style ComputeStyle() {
 		var style = new Style();
-		style.font = font ?? style.parent?.ComputedStyle.font;
-		style.textColor = textColor ?? style.parent?.ComputedStyle.textColor;
-		style.borderColor = borderColor ?? style.parent?.ComputedStyle.borderColor;
-		style.backgroundColor = backgroundColor ?? style.parent?.ComputedStyle.backgroundColor;
-		style.alert = alert ?? style.parent?.ComputedStyle.alert;
-		style.effect = effect ?? style.parent?.ComputedStyle.effect;
-		style.icon = icon ?? style.parent?.ComputedStyle.icon;
-		style.customAlertOpt = customAlertOpt ?? style.parent?.ComputedStyle.customAlertOpt;
+		var fieldsToCopy = new string[] {
+			"font",
+			"textColor",
+			"borderColor",
+			"backgroundColor",
+			"alert",
+			"effect",
+			"icon",
+			"customAlertOpt"
+		};
+		var type = GetType();
+		foreach (var fieldName in fieldsToCopy) {
+			type.GetField(fieldName)!.SetValue(style, GetComputedParameter(fieldName));
+		}
+
 		return style;
+	}
+
+	public string? GetComputedParameter(string parameterName) {
+		var parameterField = GetType().GetField(parameterName)!;
+		var value = (string?) parameterField.GetValue(this);
+		if (value == "null") return null;
+		if (parent == null) return value;
+		var parentStyle = parent.ComputedStyle;
+		return value == null ? (string?) parameterField.GetValue(parent) : value;
 	}
 
 	public Style ComputedStyle {
