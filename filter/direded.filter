@@ -72,7 +72,7 @@ SetTextColor 255 207 132
 SetBorderColor 255 207 132
 
 Hide
-BaseType "Chayula's Catalyst" "Skittering's Catalyst" "Lesser Jeweller's Orb" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Flesh Catalyst" "Carapace Catalyst" "Xoph's Catalyst" "Orb of Transmutation" "Orb of Augmentation" "Scroll of Wisdom" "Regal Shard" "Artificer's Shard" "Chance Shard" "Transmutation Shard"
+BaseType "Chayula's Catalyst" "Skittering Catalyst" "Lesser Jeweller's Orb" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Flesh Catalyst" "Carapace Catalyst" "Xoph's Catalyst" "Orb of Transmutation" "Orb of Augmentation" "Scroll of Wisdom" "Regal Shard" "Artificer's Shard" "Chance Shard" "Transmutation Shard"
 SetFontSize 25
 
 Hide
