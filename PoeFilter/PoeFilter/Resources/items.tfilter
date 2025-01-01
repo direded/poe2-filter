@@ -121,13 +121,13 @@ Show
 
 Show
 	Rarity <= Magic
-	BaseType "Dualstring" "Zealot" "Wand"
+	BaseType "Dualstring" "Zealot" "Attuned Wand" "Siphoning Wand"
 	ItemLevel >= 82
 	{% style rare_item_S %}
 
 Show
 	Rarity Rare
-	BaseType "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Chain Tiara" "Expert Wicker Tiara" "Expert Feathered Tiara" "Expert Warden Bow" "Expert Zealot Bow" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crackling Quarterstaff" "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Lizardscale Boots" "Expert Scalper's Jacket" "Expert Sacrificial Mantle" "Expert Altar Robe" "Expert Serpentscale Coat" "Expert Vaal Cuirass" "Expert Hunter Hood" "Dualstring Bow" "Expert Barrier Quarterstaff" "Primed Quiver" "Expert Edged Buckler" "Expert Stone Tower Shield" "Expert Scalper's Jacket" "Expert Shaman Mantle" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Studded Vest" "Sceptre" "Wand"
+	BaseType "Expert Silk Slippers" "Expert Wrapped Sandals" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Jewelled Gloves" "Expert Sombre Gloves" "Expert Chain Tiara" "Expert Wicker Tiara" "Expert Feathered Tiara" "Expert Warden Bow" "Expert Zealot Bow" "Expert Long Quarterstaff" "Expert Crescent Quarterstaff" "Expert Slicing Quarterstaff" "Expert Gothic Quarterstaff" "Expert Crackling Quarterstaff" "Expert Intricate Gloves" "Expert Spined Bracers" "Expert Lizardscale Boots" "Expert Scalper's Jacket" "Expert Sacrificial Mantle" "Expert Altar Robe" "Expert Serpentscale Coat" "Expert Vaal Cuirass" "Expert Hunter Hood" "Dualstring Bow" "Expert Barrier Quarterstaff" "Primed Quiver" "Expert Edged Buckler" "Expert Stone Tower Shield" "Expert Scalper's Jacket" "Expert Shaman Mantle" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Studded Vest" "Sceptre" "Attuned Wand" "Siphoning Wand"
 	{% style rare_item %}
 
 Show
