@@ -92,7 +92,7 @@ MinimapIcon 1 Yellow Pentagon
 
 Show
 	Rarity Unique
-	BaseType "Heavy Belt" "Flask" "Crucible Tower Shield" "Vase Relic" "Time-Lost Diamond" "Diamond" "Smuggler Coat" "Armoured Cap" "Fine Bracers" "Burnished Gauntlets" "Furtive Wraps" "Stone Tower Shield" "Conqueror Plate" "Stellar Amulet"
+	BaseType "Heavy Belt" "Flask" "Crucible Tower Shield" "Vase Relic" "Time-Lost Diamond" "Diamond" "Smuggler Coat" "Armoured Cap" "Fine Bracers" "Furtive Wraps" "Stone Tower Shield" "Conqueror Plate" "Stellar Amulet"
 SetFontSize 45
 PlayAlertSound 5 300
 MinimapIcon 0 Brown Star
