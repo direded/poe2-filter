@@ -212,7 +212,7 @@ Show
 
 Show
 	Rarity Normal
-	BaseType "Stellar Amulet" "Breach Ring"
+	BaseType "Stellar Amulet" "Breach Ring" "Sapphire Ring"
 	SetFontSize 40
 
 #--------------------------
@@ -239,8 +239,6 @@ Show
 	BaseType "Dualstring" "Zealot" "Attuned Wand" "Siphoning Wand"
 	ItemLevel >= 82
 SetFontSize 40
-SetTextColor 255 215 0
-SetBorderColor 255 215 0
 SetBackgroundColor 20 20 0 255
 
 Show
@@ -253,7 +251,7 @@ SetBackgroundColor 20 20 0 240
 Show
 	Class "Rings" "Amulets"
 	Rarity Rare
-SetFontSize 36
+SetFontSize 32
 SetBorderColor 20 20 0 255
 SetBackgroundColor 20 20 0 240
 PlayEffect Yellow
